@@ -1,0 +1,66 @@
+# depslib dependency file v1.0
+1487862093 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/GameHM.c
+	<stdlib.h>
+	<time.h>
+	"GameHM.h"
+	"Dico.h"
+	"DisplayHM.h"
+
+1487863060 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/GameHM.h
+	"Dico.h"
+
+1487845594 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/DefHM.h
+
+1487859973 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/LogicHM.c
+	<stdio.h>
+	"LogicHM.h"
+
+1487859940 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/LogicHM.h
+	"DefHM.h"
+	"Dico.h"
+
+1487862840 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/main.c
+	"GameHM.h"
+	<stdio.h>
+
+1487845634 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/DefHM.c
+	<stdio.h>
+	<stdlib.h>
+	"DefHM.h"
+	"LogicHM.h"
+
+1487862499 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/Dico.h
+	<stdio.h>
+
+1487862801 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/Dico.c
+	<stdio.h>
+	<stdlib.h>
+	"Dico.h"
+
+1487861644 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/DisplayHM.c
+	<stdio.h>
+	"DisplayHM.h"
+
+1487861561 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/DisplayHM.h
+
+1487862801 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.c
+	<stdio.h>
+	<stdlib.h>
+	"Dico.h"
+
+1487862499 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.h
+	<stdio.h>
+
+1487861644 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/DisplayHM.c
+	<stdio.h>
+	"DisplayHM.h"
+
+1487861561 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/DisplayHM.h
+
+1487862840 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/main.c
+	"GameHM.h"
+	<stdio.h>
+
+1487863715 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.h
+	"Dico.h"
+

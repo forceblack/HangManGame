@@ -64,7 +64,7 @@
 1487931846 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.h
 	"Dico.h"
 
-1487934531 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.c
+1487944009 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.c
 	<stdlib.h>
 	<time.h>
 	"GameHM.h"
@@ -72,10 +72,10 @@
 	"DisplayHM.h"
 	"LogicHM.h"
 
-1487933513 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.h
+1487942557 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.h
 	"GameHM.h"
 
-1487934672 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.c
+1487944128 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.c
 	<string.h>
 	<stdio.h>
 	<ctype.h>

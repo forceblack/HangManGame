@@ -47,7 +47,7 @@ void lireCaractere(Partie* maPartie)
 void comparaison (Partie* ioPartie)
 {
 int i=0,j=0;
-int count=0;        //va compter le nombre de lettre deja teste et qui ne sont pas dans le mot mystere
+//int count=0;        //va compter le nombre de lettre deja teste et qui ne sont pas dans le mot mystere
 
 	for (j=0;j<ioPartie->MotMystere.size;j++)		//pour chaque lettre du mot Mystere
 	{
@@ -58,12 +58,27 @@ int count=0;        //va compter le nombre de lettre deja teste et qui ne sont p
 			//printf("la lettre est dans le mot !");
 			ioPartie->MotDuJoueur.word[j]=ioPartie->MotMystere.word[j];		//on remplace * par la bonne lettre
 			}
-		else
-            {
-		    count++;
-            }
+		//else
+          //  {
+		    //count++;
+            //}
 		}
 	}
-printf ("dans comparaison compteur erreur=%d",count);
-ioPartie->compteurErreur=count;     //je le recalcule a chaque tour...
+}
+
+void failCount(Partie* ioPartie)
+{
+    int i=0;
+    int count=0;
+    printf("et ca s'est mon nombre de tour %d\n",ioPartie->compteurDeTour);
+
+    for (i=0;i<ioPartie->compteurDeTour;i++)
+    {
+        printf("j'en suis a i=%d\n",i);
+        if (strchr (ioPartie->MotMystere.word,ioPartie->lettreDejaTeste[i])==NULL)
+            {
+                count++;
+            }
+    }
+ioPartie->compteurErreur=count;
 }

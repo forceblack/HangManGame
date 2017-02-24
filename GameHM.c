@@ -100,6 +100,7 @@ void releasePartie(Partie* maPartieHM)
 void gameTurn(Partie* ioPartie)
 {
     //les differents affichage
+
 	afficheLettreDejaTeste(ioPartie->lettreDejaTeste);	//les lettres deja essaye
 	affichageMotMystere(ioPartie->MotDuJoueur.word);		//le mot
 	printf("dans gameturn compteur erreur=%d",ioPartie->compteurErreur);
@@ -108,6 +109,9 @@ void gameTurn(Partie* ioPartie)
 	lireCaractere(ioPartie);				//lecture au clavier
 
 	comparaison(ioPartie);                  //comparaison motMystere mot
+
+    ioPartie->compteurDeTour++;
+	failCount(ioPartie);
 
 	affichePendu(ioPartie->compteurErreur);			//le pendu
 }

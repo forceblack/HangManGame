@@ -9,6 +9,7 @@ int gameEnding(Partie* maPartie);
 
 void lireCaractere(Partie* maPartie);
 void comparaison(Partie* ioPartie);
+void failCount(Partie* ioPartie);
 
 
 

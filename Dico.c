@@ -71,7 +71,9 @@ void initDico(Dico* ioDico)
                 fillString(i,&ioDico->Dictionnaire[i],liste);            // - on copie chaque lettre dans notre string
            //   printString(&ioDico->Dictionnaire[i]);
             }
+            fclose (liste);
 	}
+
 }
 
 

@@ -59,10 +59,6 @@ int i=0,j=0;
 			//printf("la lettre est dans le mot !");
 			ioPartie->MotDuJoueur.word[j]=ioPartie->MotMystere.word[j];		//on remplace * par la bonne lettre
 			}
-		//else
-          //  {
-		    //count++;
-            //}
 		}
 	}
 }

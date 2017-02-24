@@ -17,7 +17,7 @@ int toContinu (int continuerPartie)
 		printf("voulez vous rejouer au Pendu ?\n");
 			printf("1-oui     2-non\n");
 			scanf("%d",&continuerPartie);
-		}while(getchar() != '\n') ;          //protection pour qu'en cas de replay, le premier caractere ne soit pas foire
+		}while(getchar() != '\n') ;          //protection pour qu'en cas de replay, le premier caractere ne soit pas foire (vider le buffer)
 		}while (continuerPartie <1 || continuerPartie > 2);	//repose la question tant qu'on a pas repondu 1 ou 2
 	return continuerPartie;
 }

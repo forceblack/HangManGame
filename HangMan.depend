@@ -43,28 +43,27 @@
 
 1487861561 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/DisplayHM.h
 
-1487926710 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.c
+1487953146 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.c
 	<stdio.h>
 	<stdlib.h>
 	"Dico.h"
 
-1487929353 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.h
+1487946178 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.h
 	<stdio.h>
 
-1487933102 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/DisplayHM.c
+1487951109 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/DisplayHM.c
 	<stdio.h>
 	"DisplayHM.h"
 
-1487933148 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/DisplayHM.h
+1487946273 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/DisplayHM.h
 
-1487862840 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/main.c
+1487952275 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/main.c
 	"GameHM.h"
-	<stdio.h>
 
-1487931846 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.h
+1487946069 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.h
 	"Dico.h"
 
-1487944009 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.c
+1487949590 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.c
 	<stdlib.h>
 	<time.h>
 	"GameHM.h"
@@ -72,10 +71,10 @@
 	"DisplayHM.h"
 	"LogicHM.h"
 
-1487942557 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.h
+1487947926 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.h
 	"GameHM.h"
 
-1487944128 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.c
+1487953289 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/LogicHM.c
 	<string.h>
 	<stdio.h>
 	<ctype.h>

@@ -1,6 +1,9 @@
 //Ligne de Compilation
 //gcc main.c GameHM.c Dico.c DisplayHM.c LogicHM.c
+//./a.out
 //
+//Clement Faure-Brac
+//cfaurebrac@hotmail.fr
 
 //include
 

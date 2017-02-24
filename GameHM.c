@@ -18,8 +18,16 @@ void HangMan()
         Partie maPartieHM;
         initPartie(&maPartieHM,&monDico);
 
+        printString(&maPartieHM.MotMystere);
+        printString(&maPartieHM.MotDuJoueur);
+
+
+
         continuerPartie=toContinu(continuerPartie);
         }
+
+        releaseDico(&monDico);
+
 
 }
 
@@ -32,6 +40,45 @@ void initPartie(Partie* maPartieHM,Dico* monDico)
     maPartieHM->compteurDeTour=0;	//tour 0
     maPartieHM->compteurErreur=0;	//pas d'erreur
 
-    initMotMystere(maPartieHM->MotMystere,monDico);
-    initMotDuJoueur(maPartieHM->MotMystere,maPartieHM->MotDuJoueur);
+    initMotMystere(&maPartieHM->MotMystere,monDico);
+    initMotDuJoueur(&maPartieHM->MotMystere,&maPartieHM->MotDuJoueur);
+}
+
+void initMotMystere(String* ioString,Dico* inDico)
+{
+    int ligneMystere = rand() % (inDico->nWords);       //on determine un chiffre alleatoire en fonction du nombre de mot dans le dico
+
+    initString(ioString,inDico->nWords);
+    stringCopy(&inDico->Dictionnaire[ligneMystere],ioString);
+
+//    printString(ioString);
+}
+
+void initMotDuJoueur(String* MotMystere,String* MotDuJoueur)
+{
+    initString(MotDuJoueur,MotMystere->size);
+
+    int i=0;
+    for (i=0 ; i<(MotMystere->size -1); i++)
+    {
+        MotDuJoueur->word[i]='*';
+    }
+
+    MotDuJoueur->word[i]='\0';     //ne pas oublier le caractere de fin de chaine
+
+ //   printString(MotDuJoueur);
+}
+
+void releasePartie(Partie* maPartieHM)
+{
+    releaseString(&maPartieHM->MotMystere);
+    releaseString(&maPartieHM->MotDuJoueur);
+    int i=0;
+    for(i=0;i<TAILLE_ALPHABET;i++)
+    {
+      maPartieHM->lettreDejaTeste[i]='0';
+    }
+
+    maPartieHM->compteurDeTour=0;
+	maPartieHM->compteurErreur=0;
 }

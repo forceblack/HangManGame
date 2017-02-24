@@ -86,7 +86,14 @@ void initDico(Dico* ioDico)
 
 void releaseDico(Dico* ioDico)
 {
+    int i=0;
+    for(i=0;i<ioDico->nWords;i++)
+    {
+        releaseString(&ioDico->Dictionnaire[i]);
+    }
+
     free(ioDico->Dictionnaire);
+    ioDico->nWords=0;
 }
 
 
@@ -159,4 +166,5 @@ void fillString(int i,String* dicoWord,FILE* liste)
 		c++;
 		}
     }
+    dicoWord->word[c]='\0';     //ne pas oublier le caractere de fin de chaine
 }

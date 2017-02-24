@@ -20,7 +20,6 @@ typedef struct
 {
     int nWords;             //nombre de mot dans le Dico
     String* Dictionnaire;   //tableau de String contenant tout les mots du Dico
-    int sizeMaxWord;        //taille du mot le plus grand
 }Dico;
 
 

@@ -43,12 +43,12 @@
 
 1487861561 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangMan/DisplayHM.h
 
-1487862801 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.c
+1487926710 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.c
 	<stdio.h>
 	<stdlib.h>
 	"Dico.h"
 
-1487862499 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.h
+1487926651 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/Dico.h
 	<stdio.h>
 
 1487861644 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/DisplayHM.c
@@ -61,6 +61,13 @@
 	"GameHM.h"
 	<stdio.h>
 
-1487863715 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.h
+1487926805 /home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.h
 	"Dico.h"
+
+1487927130 source:/home/clement/PROG/OpenClassrooms/PARTIE 2/PenduForceBlack/V4 CodeBlocks/HangManGame/GameHM.c
+	<stdlib.h>
+	<time.h>
+	"GameHM.h"
+	"Dico.h"
+	"DisplayHM.h"
 

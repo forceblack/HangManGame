@@ -15,18 +15,21 @@ void HangMan()
         int continuerPartie=1;
         while (continuerPartie==1)	//On joue tant que continuer Partie vaut 1
         {
-        Partie maPartieHM;
-        initPartie(&maPartieHM,&monDico);
+        Partie maPartieHM;                       //on commence par creer une partie (les elements necessaire a une partie
+        initPartie(&maPartieHM,&monDico);        //on initilalise cette partie
 
+// petit print pour voir si tout ce passe bien
         printString(&maPartieHM.MotMystere);
         printString(&maPartieHM.MotDuJoueur);
 
 
 
-        continuerPartie=toContinu(continuerPartie);
+
+        releasePartie(&maPartieHM);                 //on libere la memoire utilisé dans le Partie
+        continuerPartie=toContinu(continuerPartie); //on demande si le joueur veut faire une autre partie
         }
 
-        releaseDico(&monDico);
+        releaseDico(&monDico);                      //fin du jeu, plus de parti, on peut liberer la memoire de notre dictionnaire
 
 
 }

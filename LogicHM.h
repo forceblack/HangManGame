@@ -11,8 +11,5 @@ void lireCaractere(Partie* maPartie);
 void comparaison(Partie* ioPartie);
 void failCount(Partie* ioPartie);
 
-
-
-
 #endif			//protection contre les inclusions infinies
 

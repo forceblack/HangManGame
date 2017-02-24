@@ -1,5 +1,4 @@
 
-
 #include <stdio.h>
 
 #include "DisplayHM.h"
@@ -13,10 +12,12 @@ int toContinu (int continuerPartie)
 	//boucle qui demande si on veut jouer encore
 		do
 		{
+		do
+		{
 		printf("voulez vous rejouer au Pendu ?\n");
 			printf("1-oui     2-non\n");
 			scanf("%d",&continuerPartie);
-
+		}while(getchar() != '\n') ;          //protection pour qu'en cas de replay, le premier caractere ne soit pas foire
 		}while (continuerPartie <1 || continuerPartie > 2);	//repose la question tant qu'on a pas repondu 1 ou 2
 	return continuerPartie;
 }
@@ -52,8 +53,6 @@ void affichageMotMystere (char motDuJoueur[])
 
 void affichePendu(int compteurErreur)
 {
-
-//	printf("%d ca c'est *compteurErreur dans affiche pendu",compteurErreur);
 	switch (compteurErreur)
 	{
 	case 0:
@@ -176,3 +175,4 @@ void affichePendu(int compteurErreur)
 	}
 
 }
+

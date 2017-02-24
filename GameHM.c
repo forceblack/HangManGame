@@ -20,8 +20,8 @@ void HangMan()
         initPartie(&maPartieHM,&monDico);        //on initilalise cette partie
 
 // petit print pour voir si tout ce passe bien
-        printString(&maPartieHM.MotMystere);
-        printString(&maPartieHM.MotDuJoueur);
+//        printString(&maPartieHM.MotMystere);
+//        printString(&maPartieHM.MotDuJoueur);
 
         do			//on joue
 		{
@@ -34,7 +34,6 @@ void HangMan()
         }
 
         releaseDico(&monDico);                      //fin du jeu, plus de parti, on peut liberer la memoire de notre dictionnaire
-
 
 }
 
@@ -60,10 +59,10 @@ void initMotMystere(String* ioString,Dico* inDico)
 {
     int ligneMystere = rand() % (inDico->nWords);       //on determine un chiffre alleatoire en fonction du nombre de mot dans le dico
 
-    initString(ioString,inDico->nWords);
-    stringCopy(&inDico->Dictionnaire[ligneMystere],ioString);
+    initString(ioString,inDico->Dictionnaire[ligneMystere].size); //on initialise la string par la taille du mot Random
 
-//    printString(ioString);
+    stringCopy(&inDico->Dictionnaire[ligneMystere],ioString);       //on peut copier le mot du dico dans la string
+
 }
 
 void initMotDuJoueur(String* MotMystere,String* MotDuJoueur)
@@ -77,8 +76,6 @@ void initMotDuJoueur(String* MotMystere,String* MotDuJoueur)
     }
 
     MotDuJoueur->word[i]='\0';     //ne pas oublier le caractere de fin de chaine
-
- //   printString(MotDuJoueur);
 }
 
 void releasePartie(Partie* maPartieHM)
@@ -103,8 +100,6 @@ void gameTurn(Partie* ioPartie)
 
 	afficheLettreDejaTeste(ioPartie->lettreDejaTeste);	//les lettres deja essaye
 	affichageMotMystere(ioPartie->MotDuJoueur.word);		//le mot
-	printf("dans gameturn compteur erreur=%d",ioPartie->compteurErreur);
-
 
 	lireCaractere(ioPartie);				//lecture au clavier
 
@@ -115,9 +110,4 @@ void gameTurn(Partie* ioPartie)
 
 	affichePendu(ioPartie->compteurErreur);			//le pendu
 }
-
-
-
-
-
 

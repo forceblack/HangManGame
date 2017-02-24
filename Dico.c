@@ -1,11 +1,8 @@
 
-
 #include <stdio.h>
 #include <stdlib.h>
 
 #include "Dico.h"
-
-
 
 ////////////////////////STRING/////////////////////////////////////////////////////////////////////////////////////////
 
@@ -15,7 +12,6 @@ void initString(String* ioString,int inSize)
 	ioString->size=inSize;
 	ioString->word=malloc(inSize+1);
 }
-
 
 void stringCopy (String* in,String* out)
 {
@@ -41,7 +37,6 @@ void printString(String* inString)
 
 
 ////////////////////////////DICO///////////////////////////////////////////////////////////////////////////////////////////
-
 
 
 void initDico(Dico* ioDico)
@@ -80,10 +75,6 @@ void initDico(Dico* ioDico)
 }
 
 
-
-
-
-
 void releaseDico(Dico* ioDico)
 {
     int i=0;
@@ -98,10 +89,7 @@ void releaseDico(Dico* ioDico)
 
 
 
-
 ///////////////////////////////////////////MANIPULATION////////////////////////////////////////////////////////////////////////////
-
-
 
 
 
@@ -120,8 +108,6 @@ return nbLigne;
 }
 
 
-
-
 void gotoLine(int i, FILE* liste)
 {
     rewind(liste); //on rembobine pour etre sur
@@ -135,18 +121,15 @@ void gotoLine(int i, FILE* liste)
 
 
 
-
 int letterCount(int i, FILE* liste)
 {
-    int count=0;
-
     gotoLine(i,liste);
 
+    int count=0;
     while (fgetc(liste) != '\n')
     {
         count++;                    //on augmente notre conteur de lettre jusqu'as ce qu'on tombe sur un saut de ligne
     }
-
 return count;
 }
 
@@ -154,7 +137,6 @@ return count;
 
 void fillString(int i,String* dicoWord,FILE* liste)
 {
-
     gotoLine(i,liste);
 
     int c=0;

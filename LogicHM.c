@@ -13,14 +13,15 @@ int gameEnding(Partie* maPartie)
     if(strcmp(maPartie->MotMystere.word,maPartie->MotDuJoueur.word) == 0)
     {
         win();
-        next=1;
+        printf("le mot était %s\n",maPartie->MotMystere.word);
+        next=1;                                 //on a trouvé le mot -> on va sortir de la boucle de jeu
     }
     else if(maPartie->compteurErreur>=10) //si on fait plus de 10 erreurs
     {
         loose();
+        printf("le mot était %s\n",maPartie->MotMystere.word);
         next=1;                                //on change la condition
     }
-
     return next;
 }
 
@@ -35,7 +36,7 @@ void lireCaractere(Partie* maPartie)
 	{
 	lettreDuTour = getchar();               // On lit le premier caractère
 	lettreDuTour = toupper(lettreDuTour);   // On met la lettre en majuscule si elle ne l'est pas déjà
-	  // On lit les autres caractères mémorisés un à un jusqu'au \n (pour les effacer)
+    // On lit les autres caractères mémorisés un à un jusqu'au \n (pour les effacer)
 	while (getchar() != '\n') ;
 	}while(strchr(maPartie->lettreDejaTeste,lettreDuTour)!=NULL);	    //il faut ajouter un message d'erreur
 
@@ -66,18 +67,16 @@ int i=0,j=0;
 	}
 }
 
-void failCount(Partie* ioPartie)
+void failCount(Partie* ioPartie)   //fonction qui compte le nombre de faute
 {
     int i=0;
     int count=0;
-    printf("et ca s'est mon nombre de tour %d\n",ioPartie->compteurDeTour);
 
-    for (i=0;i<ioPartie->compteurDeTour;i++)
-    {
-        printf("j'en suis a i=%d\n",i);
-        if (strchr (ioPartie->MotMystere.word,ioPartie->lettreDejaTeste[i])==NULL)
+    for (i=0;i<ioPartie->compteurDeTour;i++)                                 //une boucle sur le nombre de tour qu'on a eu pour le moment
+    {                                                                           //puisqu'on ajoute une nouvelle lettre par tour
+        if (strchr (ioPartie->MotMystere.word,ioPartie->lettreDejaTeste[i])==NULL)  //on compare le mot mystere et les lettre qu'on a essaye
             {
-                count++;
+                count++;                        //si la lettre n'est pas dans le mot, c'est une erreur et on
             }
     }
 ioPartie->compteurErreur=count;

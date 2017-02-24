@@ -7,7 +7,6 @@
 //define
 #define TAILLE_ALPHABET 26
 
-
 //struct
 typedef struct
 {
@@ -33,4 +32,3 @@ void gameTurn(Partie* ioPartie);
 
 
 #endif			//protection contre les inclusions infinies
-

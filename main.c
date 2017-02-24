@@ -1,12 +1,11 @@
 //Ligne de Compilation
-//gcc main.c DefHM.c DisplayHM.c GameHM.c InitHM.c LogicHM.c
+//gcc main.c GameHM.c Dico.c DisplayHM.c LogicHM.c
 //
 
 //include
 
-
 #include "GameHM.h"
-#include <stdio.h>
+
 
 //main
 

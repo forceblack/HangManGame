@@ -22,7 +22,6 @@ typedef struct
 }Dico;
 
 
-
 //prototype
 
 void initString(String* ioString,int inSize);

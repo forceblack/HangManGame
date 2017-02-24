@@ -23,11 +23,13 @@ typedef struct
 
 //prototype
 void HangMan();
-void initPartie(Partie* maPartieHM,Dico* monDico);
-void initMotMystere(String* ioString,Dico* inDico);
-void initMotDuJoueur(String*,String*);
 
+void initPartie(Partie* maPartieHM,Dico* monDico);
+    void initMotMystere(String* ioString,Dico* inDico);
+    void initMotDuJoueur(String*,String*);
 void releasePartie(Partie* maPartieHM);
+
+void gameTurn(Partie* ioPartie);
 
 
 #endif			//protection contre les inclusions infinies

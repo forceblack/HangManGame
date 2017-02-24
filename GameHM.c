@@ -5,6 +5,7 @@
 #include "GameHM.h"
 #include "Dico.h"
 #include "DisplayHM.h"
+#include "LogicHM.h"
 
 void HangMan()
 {
@@ -22,7 +23,10 @@ void HangMan()
         printString(&maPartieHM.MotMystere);
         printString(&maPartieHM.MotDuJoueur);
 
-
+        do			//on joue
+		{
+		gameTurn(&maPartieHM);
+		}while(gameEnding(&maPartieHM)==0);
 
 
         releasePartie(&maPartieHM);                 //on libere la memoire utilisé dans le Partie
@@ -33,6 +37,11 @@ void HangMan()
 
 
 }
+
+
+/////////////////////////////////INIT DE PARTIE/////////////////////////////////////////////////////////////
+
+
 
 void initPartie(Partie* maPartieHM,Dico* monDico)
 {
@@ -85,3 +94,26 @@ void releasePartie(Partie* maPartieHM)
     maPartieHM->compteurDeTour=0;
 	maPartieHM->compteurErreur=0;
 }
+
+//////////////////////////////////LE DEROULEMENT D UN TOUR//////////////////////////////////////////////////////////////////////////
+
+void gameTurn(Partie* ioPartie)
+{
+    //les differents affichage
+	afficheLettreDejaTeste(ioPartie->lettreDejaTeste);	//les lettres deja essaye
+	affichageMotMystere(ioPartie->MotDuJoueur.word);		//le mot
+	printf("dans gameturn compteur erreur=%d",ioPartie->compteurErreur);
+
+
+	lireCaractere(ioPartie);				//lecture au clavier
+
+	comparaison(ioPartie);                  //comparaison motMystere mot
+
+	affichePendu(ioPartie->compteurErreur);			//le pendu
+}
+
+
+
+
+
+

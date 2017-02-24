@@ -1,4 +1,3 @@
-
 #ifndef DICO_FILE	//protection contre les inclusions infinies
 #define DICO_FILE
 

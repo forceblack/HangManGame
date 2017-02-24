@@ -6,11 +6,19 @@
 
 //prototype
 //void regleDuJeu();
-//void affichageMotMystere (char motDuJoueur[]);
+
 //void afficheLettreDejaTeste (char lettreDejaTeste[]);
 //void afficheNbTour (int compteurDeTour);
 //void affichePendu(int compteurErreur);
 int toContinu (int continuerPartie);
+
+void win();
+void loose();
+
+void afficheLettreDejaTeste (char lettreDejaTeste[]);
+void affichageMotMystere (char motDuJoueur[]);
+
+void affichePendu(int compteurErreur);
 
 
 

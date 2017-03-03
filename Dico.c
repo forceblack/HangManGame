@@ -54,7 +54,7 @@ void initDico(Dico* ioDico)
         //printf("voici le nombre de ligne %d",ioDico->nWords);
 
         //3 on peut donc allouer notre tableau de String qui va contenir les mots du Dico
-        ioDico->Dictionnaire = malloc(ioDico->nWords * sizeof(String*));
+        ioDico->Dictionnaire = malloc(ioDico->nWords * sizeof(String));
             if (ioDico->Dictionnaire == NULL)
             {
                 printf("probleme de malloc");
